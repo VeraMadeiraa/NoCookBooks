@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - NoCookBooks</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+
+    <header>
+        @*            <div class="container ">
+
+        <center><a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/logo.png" alt=""></a></center>
+
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between m-3 ">
+        <ul class="navbar-nav flex-grow-1">
+
+        <div class="btn-group">
+        <button type="button" class="btn btn dropdown-toggle" style="background-color:#40FF00; border-color:#66FD40" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Receitas
+        </button>
+        <div class="dropdown-menu">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Recipe" asp-action="">Receitas de Carne</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Recipe" asp-action="">Receitas de Peixe</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Recipe" asp-action="">Receitas Vegetarianas</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Recipe" asp-action="">Sobremesas</a>
+        <div class="dropdown-divider"></div>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Recipe" asp-action="GetAll">Todas as Receitas</a>
+        </div>
+        </div>
+        <div class="btn-group m-3">
+        <button style="background-color:#40FF00; border-color:#40FF00" type="button" class="btn btn-default"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About"> Sobre nós</a> </button>
+
+        </div>
+
+        <div class="btn-group">
+        <button style="background-color:#40FF00; border-color:#40FF00" type="button" class="btn btn-default"> <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contactos</a> </button>
+        </div>
+
+        <button style="background-color:#40FF00; border-color:#40FF00" type="button" class="btn btn-default"><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a></button>
+        <div class="btn-group"></div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        </ul>
+
+        </div>
+
+        </nav>*@
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - NoCookBooks - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
